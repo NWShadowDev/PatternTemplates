@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hero {
+  background-image: url('../img/forest-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  min-height: 300px;
+  padding: 80px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.brand {
+  float: left;
+}
+
+.nav {
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar {
+  clear: both;
+  padding: 30px;
+}
+
+#navbar li {
+  display: inline-block;
+  list-style-type: none;
+  float: left;
+  margin-left: 10px;
+}
+
+.col {
+  float: left;
+  width: 23%;
+  margin: 1%;
+}
+
+@media screen and (min-width: 1024px) {
+  #navbar {
+    font-size: 14pt;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 425px){
+  .col {
+    width: 100%;
+    margin: 0;
+  }
+
+  #content {
+    padding: 10px;
+  }
+}
