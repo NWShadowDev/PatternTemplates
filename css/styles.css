@@ -1,0 +1,94 @@
+/*Body*/
+body {
+  background-color: #020;
+}
+#page {
+  margin: .5in;
+  background-color: #000;
+}
+/*Header*/
+#header {
+  text-align: center;
+  background-color: #ccc;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#header h1 {
+  font-size: 3.5em;
+  margin-bottom: -10px;
+}
+
+#header h2 {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+/*Navigation*/
+#navbar {
+  list-style-type: none;
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+}
+
+#navbar li {
+  display: inline-block;
+  padding: 4px;
+}
+
+#navbar li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+/*Main*/
+#mainMid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+#mainMid img {
+  padding: 10px;
+  width: 90%;
+  height: 50%;
+  margin-left: 10px;
+}
+
+#welcome {
+  background-color: white;
+  width: 50%;
+}
+
+#mainMid h4 {
+  position: relative;
+  left: 250px;
+  color: white;
+}
+
+ #sidebar {
+  width: 35%;
+  float: right;
+  background-color: green;
+  right: 60px;
+  top: 65px;
+  padding: 10px;
+}
+
+#sidebar input {
+  margin-left: 50px;
+  height: 30px;
+  font-size: 1em;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+#sidebar label {
+  margin-left: 50px;
+}
+
+#sidebar h4 {
+  margin-left: -74px;
+}
