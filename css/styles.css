@@ -5,6 +5,12 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
+
+@media screen and (min-width: 1900px) {
+  #mainMid {
+    max-width: 1900px;
+  }
+}
 @media screen and (min-width: 1168px) {
   #welcome {
     max-width: 60%;
