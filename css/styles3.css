@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#page {
+  padding: 20px;
+}
+
+#header {
+  background-color: #ccc;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#main {
+  padding: 20px;
+  width: 100%;
+}
+
+#main .gallery-pic img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-pic {
+  margin: 1%;
+  width: 31.3%;
+  float: left;
+  background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-pic {
+    width: 48%;
+  }
+}
