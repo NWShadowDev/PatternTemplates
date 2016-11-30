@@ -8,6 +8,7 @@
 
 body {
   margin: 0;
+  background-color: papayawhip;
 }
 
 img {
@@ -30,18 +31,32 @@ img {
   padding: 0;
   margin: 0;
 }
-
+#header {
+  font-size: 3em;
+}
 #navbar {
   padding: 30px;
   clear: both;
   overflow: auto;
+  background-color: skyblue;
 }
 
 #navbar li {
   display: inline-block;
   list-style-type: none;
   float: left;
-  margin-left: 10px;
+  margin-left: 20px;
+  font-size: 1.5em;
+}
+
+#navbar li a {
+  color: white;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  color: darkblue;
+  text-decoration: underline;
 }
 
 #left {
@@ -56,6 +71,7 @@ img {
 
 #right img {
   display: block;
+  border-radius: 50%;
 }
 
 #hero {
@@ -71,7 +87,8 @@ img {
 .col1 img {
   display: block;
   max-width: 70%;
-  padding: 10px;
+  margin-bottom: 10px;
+  border: 3px solid saddlebrown;
 }
 
 .col1 {
@@ -88,6 +105,10 @@ img {
 
 .col2 h2 {
   margin-bottom: -10px;
+  margin-top: -10px;
+}
+.col2 p {
+  margin-bottom: 50px;
 }
 
 .col3 {
@@ -98,17 +119,35 @@ img {
 
 .col3 img {
   width: 50%;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .col31 {
   float: left;
-  width: 50%;
+  width: 49%;
 }
 
 .col32 {
   float: left;
   width: 50%;
 }
+@media screen and (min-width: 768px) and (max-width:1024px){
+
+  .col1 {
+    float: none;
+    width: 100%;
+  }
+  .col1 img {
+    float: left;
+    width: 31%;
+    margin: 1%;
+  }
+  .col2, .col3 {
+    width: 48%;
+  }
+}
+
 
 @media screen and (max-width: 425px) {
   .col1, .col2, .col3 {
@@ -122,20 +161,5 @@ img {
   #left, #right {
     width: 100%;
     float: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-
-  .col1 {
-    float: none;
-    width: 100%;
-  }
-  .col1 img {
-    float: left;
-    width: 33%;
-  }
-  .col2, .col3 {
-    width: 48%;
   }
 }
